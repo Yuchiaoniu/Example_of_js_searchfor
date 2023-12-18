@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let tagId = tagIdArray[i];
         let ImageUrl = `./upload/${user?.email}${tagId}.jpg`;
         const dynamicImage = document.getElementById(tagId);
-        console.log(tagId);
+        // console.log(tagId);
 
         // Send user data to PHP using AJAX
         const xhr = new XMLHttpRequest();

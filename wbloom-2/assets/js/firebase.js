@@ -3,7 +3,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
 import { getAuth, signOut, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, getRedirectResult } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyB3hmaa5DKY70in7d8_HT8uLuPnsc58wyo",
@@ -97,7 +96,16 @@ if (user?.displayName) {
     document.getElementById('displayName').textContent = 'Hello ' + user.displayName;
     document.getElementById('logout-button').style.display = 'inline-flex';
 }
+console.log(user?.email);
 
+// 獲取你的按鈕元素
+var generateButton = document.getElementById('generateButton');
 
+// 為按鈕添加點擊事件監聽器
+generateButton.addEventListener('click', function () {
+    // 當按鈕被點擊時，執行以下代碼
+    var email = user?.email; // 這裡應該是email變數
+    window.location.href = 'https://www.order.scholar.ovh/checkout?email=' + encodeURIComponent(email);
+});
 
 export { user };

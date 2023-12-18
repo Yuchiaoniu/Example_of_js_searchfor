@@ -104,7 +104,9 @@ if (user?.displayName) {
     document.getElementById('displayName').textContent = 'Hello ' + user.displayName;
     document.getElementById('logout-button').style.display = 'inline-flex';
 }
-
+var googleEmail = user?.email; // 這應該被替換為用戶的Google帳號
+var jsonString = JSON.stringify({ email: googleEmail });
+localStorage.setItem("googleEmail", jsonString);
 //圖片上傳機制
 // document.addEventListener('DOMContentLoaded', () => {
 //     let userEmail = user?.email; // 假設這是使用者的電子郵件地址
