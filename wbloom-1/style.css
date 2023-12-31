@@ -5,11 +5,11 @@
 }
 
 #second_container
-  { 
-  background-image: url(./assets/img/background2.jpg);
-  background-repeat:no-repeat;
+{
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(./assets/img/background2.jpg);
+  background-repeat: no-repeat;
   width: auto;
-  }
+}
 .width80{width: 80%;}
 .center{display:flex;justify-content: center;}
 

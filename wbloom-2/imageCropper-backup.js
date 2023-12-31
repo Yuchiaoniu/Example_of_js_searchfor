@@ -2,10 +2,10 @@ function isFileValid(file) {
     const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png'];
     return allowedTypes.includes(file.type);
 }
-window.onload = function(){
+window.onload = function () {
     //image-cropper照片選擇器
     var inputImageFile = document.querySelectorAll('.form .file');
-    for(let i=0;i<inputImageFile.length;i++){
+    for (let i = 0; i < inputImageFile.length; i++) {
         inputImageFile[i].addEventListener("change", (e) => {
             var file = e.target.files[0];
             // 驗證檔案類型
@@ -42,22 +42,19 @@ window.onload = function(){
                 reader.readAsDataURL(file);
                 var imageWidth = image.width;
                 var imageHeight = image.height;
-                var userEmail = image.parentNode.querySelector('input[name="user_data"]').getAttribute('value');
-                var elTagId = image.parentNode.querySelector('input[name="tag_name"]').getAttribute('value');
-
                 var imageUrl;
-                if(image.hasAttribute('data-old-src')){
+                if (image.hasAttribute('data-old-src')) {
                     imageUrl = image.getAttribute('data-old-src');
                 }
-                else{
+                else {
                     imageUrl = image.getAttribute('src');
                 }
-                cropper.setAspectRatio(imageWidth/imageHeight);
-                imageSelect.querySelector('.image-select-close-btn').addEventListener('click',function(){
+                cropper.setAspectRatio(imageWidth / imageHeight);
+                imageSelect.querySelector('.image-select-close-btn').addEventListener('click', function () {
                     imageSelect.remove();
-                    inputImageFile[i].value='';
+                    inputImageFile[i].value = '';
                 })
-                imageSelect.querySelector('.image-select-btn').addEventListener('click',function(){
+                imageSelect.querySelector('.image-select-btn').addEventListener('click', function () {
                     const canvas = cropper.getCroppedCanvas();
                     const croppedImageDataURL = canvas.toDataURL("image/jpeg"); // 以JPEG格式获取裁剪后的图像数据URL
                     var xhr = new XMLHttpRequest();
@@ -69,20 +66,15 @@ window.onload = function(){
                                 console.log('Upload Successful:', xhr.responseText);
                                 alert(xhr.responseText);
                                 image.src = croppedImageDataURL;
-                                image.setAttribute('data-old-src',imageUrl);
+                                image.setAttribute('data-old-src', imageUrl);
                             } else {
                                 console.error('Upload Failed:', xhr.statusText);
                             }
                         }
                     };
-                    xhr.send(
-                        'image=' + encodeURIComponent(croppedImageDataURL) + 
-                        '&imageUrl=' + encodeURIComponent(imageUrl) +
-                        '&userEmail=' + encodeURIComponent(userEmail) +
-                        '&elTagId=' + encodeURIComponent(elTagId)
-                    );
+                    xhr.send('image=' + encodeURIComponent(croppedImageDataURL) + '&imageName=' + encodeURIComponent(imageUrl));
                     imageSelect.remove();
-                    inputImageFile[i].value='';
+                    inputImageFile[i].value = '';
                 })
             } else {
                 // 如果檔案類型無效，顯示錯誤訊息

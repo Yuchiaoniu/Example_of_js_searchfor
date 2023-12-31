@@ -8,6 +8,8 @@
     <meta http-equiv="expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloom | Home</title>
+    <meta name="description"
+        content="WBloom - Set up your own website in just 15 minutes for only 10 dollars, tax included.">
     <link rel="stylesheet" class="style_file" href="style.css">
     <link rel="stylesheet" href="questions.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,38 +17,41 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;800&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
+    <script async defer src="https://apis.google.com/js/platform.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
+    <script async src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+    <script async src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js"></script>
+    <script async src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.min.css">
-
     <script src="imageCropper.js"></script>
     <link rel="stylesheet" href="./imageCropper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
 
     <header id="main-header">
-        <h1 id="brandName" class="logo">Bloom</h1>
         <div style="display:flex; align-items: center; justify-content: center; flex-direction: row;">
+            <h1 id="brandName" class="logo">Bloom</h1>
+        </div>
+        <div id="userzone" style="display:flex; align-items: center; justify-content: center; flex-direction: row;">
             <div style="color:white;" id="displayName"></div>
             <button type="button" class="google-btn btn3">Connect with <span>Google</span></button>
             <button type="button" id="logout-button">sign out</button>
         </div>
+        <!-- 加入一個隱藏的標籤來儲存email -->
+        <div id="email" style="display: none;"></div>
     </header>
+
     <section id="a"></section>
     <div class="container">
 
         <div class="content">
-            <h1>WBloom - Where Art be build</h1>
+            <h1>Where The Art be build</h1>
             <p>With our Pre-made website template, you can quickly create web pages with images and texts in
                 just
                 15 minutes for your brand.
@@ -150,7 +155,7 @@
             <div class="img_tag image-box">
                 <img id="c1" src="./assets/img/c1.jpg" alt="Image 1">
                 <div class="image-text">
-                    <p>Where Web Designs Blossom into Digital Artistry</p>
+                    <!-- <p>Where Web Designs Blossom into Digital Artistry</p> -->
                     <h1>Cultivating Exquisite Web Experiences for Your Success
                     </h1>
                 </div>
@@ -158,7 +163,7 @@
             <div class="img_tag image-box">
                 <img id="c2" src="./assets/img/c2.jpg" alt="Image 2">
                 <div class="image-text">
-                    <p>Cultivating Extraordinary Web Experiences</p>
+                    <!-- <p>Cultivating Extraordinary Web Experiences</p> -->
                     <h1>Let Your Brand Blossom with Our Creative Web Designs
                     </h1>
                 </div>
@@ -167,7 +172,7 @@
             <div class="img_tag image-box">
                 <img id="c3" src="./assets/img/c3.jpg" alt="Image 2">
                 <div class="image-text">
-                    <p>Cultivating Extraordinary Web Experiences</p>
+                    <!-- <p>Cultivating Extraordinary Web Experiences</p> -->
                     <h1>Your Web Journey Begins: Unlocking digital
                         possibilities.</h1>
                 </div>
@@ -176,7 +181,7 @@
             <div class="img_tag image-box">
                 <img id="c4" src="./assets/img/c4.jpg" alt="Image 2">
                 <div class="image-text">
-                    <p>Cultivating Extraordinary Web Experiences</p>
+                    <!-- <p>Cultivating Extraordinary Web Experiences</p> -->
                     <h1>Designs that Flourish: Nurturing your online growth</h1>
                 </div>
             </div>
@@ -193,20 +198,30 @@
     </section>
     <footer>
         <div class="footer">
-            <div class="row">
+            <!-- <div class="row">
                 <a id="facebook" href="#"><i class="fa fa-facebook"></i></a>
                 <a id="instagram" href="#"><i class="fa fa-instagram"></i></a>
                 <a id="youtube" href="#"><i class="fa fa-youtube"></i></a>
                 <a id="twitter" href="#"><i class="fa fa-twitter"></i></a>
-            </div>
+            </div> -->
 
             <div class="row">
                 <ul>
-                    <li><a class="bottomAnchor" href="">Start</a></li>
-                    <li><a class="bottomAnchor" href="">Our Services</a></li>
-                    <li><a class="bottomAnchor" href="">Adventage</a></li>
-                    <li><a class="bottomAnchor" href="">Terms & Conditions</a></li>
-                    <li><a class="bottomAnchor" href="">OVH Is Our Choice</a></li>
+                    <li>
+                        <p class="bottomAnchor" href="">Start</p>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor" href="">Our Services</p>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor" href="">Adventage</p>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor" href="">Terms & Conditions</p>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor" href="">OVH Is Our Choice</p>
+                    </li>
                 </ul>
             </div>
 
@@ -220,7 +235,21 @@
 <script src="./assets/js/anchor.js"></script>
 <script src="./assets/js/fileGenerator.js" type="module"></script>
 <script src="./assets/js/imgUploader.js" type="module"></script>
-<script src="./assets/js/slide.js" type="module"></script>
 <script src="./assets/js/textEditor.js" type="module"></script>
+<!-- <script>
+    window.onload = function () {
+        var titleContent = document.getElementById("t0").innerText;
+        var descriptionContent = document.getElementById("p0").innerText;
+        document.title = titleContent;
+        var metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", descriptionContent);
+        } else {
+            metaDescription = document.createElement("meta");
+            metaDescription.name = "description";
+            metaDescription.content = descriptionContent;
+            document.getElementsByTagName("head")[0].appendChild(metaDescription);
+        }
+    }</script> -->
 
 </html>

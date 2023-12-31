@@ -40,9 +40,10 @@
     }
 
     .styled-button {
+      width:10vw;
+      height:5vh;
         display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
+        font-size: medium;
         background-color: #3498db;
         color: #fff;
         border: none;
@@ -99,14 +100,13 @@
     }
 
     #logout-button {
-        background-color: rgb(158, 92, 219);
+        background-color: rgb(1, 1, 1);
         color: #fff;
         font-size: 19px;
         padding: 1px;
         border-radius: 5px;
-        margin: 15px 15px 15px 0;
+        margin: 15px 20px ;
         cursor: pointer;
-        border: 1px solid #fff;
         transition: .4s;
     }
 
@@ -114,11 +114,12 @@
         background-color: #3e8e41
     }
 #second_container
-  { 
-  background-image: url(./assets/img/background2.jpg);
-  background-repeat:no-repeat;
+{
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(./assets/img/background2.jpg);
+  background-repeat: no-repeat;
   width: auto;
-  }
+}
+
 .width80{width: 80%;}
 .center{display:flex;justify-content: center;}
 

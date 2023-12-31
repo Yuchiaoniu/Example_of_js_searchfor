@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
                     console.log("Text saved successfully.");
-                    window.location.href = 'textUpload.php';
                 }
             };
             xhr.send("editedText=" + encodeURIComponent(editedText) + "&tagId=" + encodeURIComponent(tagId) + "&userEmail=" + encodeURIComponent(userEmail));
@@ -91,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //抓取文件
     function fetchTitlesTextFile(userEmail, titlesId) {
         // 動態生成文件路徑，例如：./user_email_t1.txt 或 ./user_email_t2.txt
-        var filePath = `./${userEmail}${titlesId}.txt`;
+        var filePath = `../../wbloom-2/${userEmail}${titlesId}.txt`;
 
         // 添加一個唯一的查詢參數（當前的時間戳）
         var url = filePath + "?t=" + new Date().getTime();

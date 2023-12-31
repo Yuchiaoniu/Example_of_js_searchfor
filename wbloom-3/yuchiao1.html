@@ -11,8 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;800&amp;family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
     <script src="https://apis.google.com/js/platform.js" async="" defer="" gapi_processed="true"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Play&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
@@ -23,22 +21,27 @@
     <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.min.css">
-
     <script src="imageCropper.js"></script>
     <link rel="stylesheet" href="./imageCropper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
 
     <header id="main-header">
-        <h1 id="t0" class="logo titleEditable">Bloom</h1><div class="center"><button id="saveButtont0" class="textEditable styled-button">Save Text</button></div>
         <div style="display:flex; align-items: center; justify-content: center; flex-direction: row;">
+            <h1 id="t0" class="logo titleEditable">yuchiao1</h1><div class="center"><button id="saveButtont0" class="textEditable styled-button">Save Text</button></div>
+        </div>
+        <div id="" style="display:flex; align-items: center; justify-content: center; flex-direction: row;">
             <div style="color:white;" id="displayName">Hello Niu Yuchiao</div>
             <button type="button" class="google-btn btn3">Connect with <span>Google</span></button>
             <button type="button" id="logout-button" style="display: inline-flex;">sign out</button>
         </div>
+        <!-- 加入一個隱藏的標籤來儲存email -->
+        <div id="email" style="display: none;">yuchiao.niu@gmail.com</div>
     </header>
+
     <section id="a"></section>
     <div class="container">
 
@@ -51,7 +54,7 @@
                     Start
                 </button></a>
         </div>
-        <img id="main" src="./upload/undefinedmain.jpg" class="background">
+        <img id="main" src="../wbloom-2/upload/undefinedmain.jpg" class="background">
             <form id="uploadForm_main" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -74,7 +77,7 @@
                 <figure class="snip1218">
                     <div class="image">
 
-                        <img id="a1" src="./upload/undefineda1.jpg">
+                        <img id="a1" src="../wbloom-2/upload/undefineda1.jpg">
             <form id="uploadForm_a1" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -90,7 +93,7 @@
                 </figure>
 
                 <figure class="snip1218">
-                    <div class="image"><img id="a2" src="./upload/undefineda2.jpg">
+                    <div class="image"><img id="a2" src="../wbloom-2/upload/undefineda2.jpg">
             <form id="uploadForm_a2" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -106,7 +109,7 @@
                 </figure>
 
                 <figure class="snip1218">
-                    <div class="image"><img id="a3" src="./upload/undefineda3.jpg">
+                    <div class="image"><img id="a3" src="../wbloom-2/upload/undefineda3.jpg">
             <form id="uploadForm_a3" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -122,7 +125,7 @@
                 </figure>
 
                 <figure class="snip1218">
-                    <div class="image"><img id="a4" src="./upload/undefineda4.jpg">
+                    <div class="image"><img id="a4" src="../wbloom-2/upload/undefineda4.jpg">
             <form id="uploadForm_a4" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -149,7 +152,8 @@
         <div id="second_container" class="sections_container">
             <section class="section-1">
                 <div class="section-1-text">
-                    <p id="p3" class="paragraphEditable">Each element has an entry animation that we have prepared in advanc</p><div class="center"><button id="saveButtonp3" class="textEditable styled-button">Save Text</button></div><br>
+                    <p id="p3" class="paragraphEditable">Each element has an entry animation that we have prepared in advance.
+                    </p><div class="center"><button id="saveButtonp3" class="textEditable styled-button">Save Text</button></div><br>
                     <h1 id="t8" class="titleEditable">Each element can be edit
                     </h1><div class="center"><button id="saveButtont8" class="textEditable styled-button">Save Text</button></div>
                     <div class="section_btn_container">
@@ -157,7 +161,7 @@
                     </div>
                 </div>
                 <div class="img_tag section-1-image">
-                    <img id="b1" src="./upload/undefinedb1.jpg" alt="">
+                    <img id="b1" src="../wbloom-2/upload/undefinedb1.jpg" alt="">
             <form id="uploadForm_b1" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -170,7 +174,7 @@
             </section><br><br>
             <section id="f" class="section-2">
                 <div class="img_tag section-2-image">
-                    <img id="b2" src="./upload/undefinedb2.jpg" alt="">
+                    <img id="b2" src="../wbloom-2/upload/undefinedb2.jpg" alt="">
             <form id="uploadForm_b2" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -200,7 +204,7 @@
         <!-- New -->
         <div id="third_container" class="image-container">
             <div class="img_tag image-box">
-                <img id="c1" src="./upload/undefinedc1.jpg" alt="Image 1">
+                <img id="c1" src="../wbloom-2/upload/undefinedc1.jpg" alt="Image 1">
             <form id="uploadForm_c1" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -210,13 +214,13 @@
             </form>
         
                 <div class="image-text">
-                    <p id="p6" class="paragraphEditable">Where Web Designs Blossom into Digital Artistry</p><div class="center"><button id="saveButtonp6" class="textEditable styled-button">Save Text</button></div>
+                    <!-- <p>Where Web Designs Blossom into Digital Artistry</p> -->
                     <h1 id="t11" class="titleEditable">Cultivating Exquisite Web Experiences for Your Success
                     </h1><div class="center"><button id="saveButtont11" class="textEditable styled-button">Save Text</button></div>
                 </div>
             </div>
             <div class="img_tag image-box">
-                <img id="c2" src="./upload/undefinedc2.jpg" alt="Image 2">
+                <img id="c2" src="../wbloom-2/upload/undefinedc2.jpg" alt="Image 2">
             <form id="uploadForm_c2" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -226,14 +230,14 @@
             </form>
         
                 <div class="image-text">
-                    <p id="p7" class="paragraphEditable">Cultivating Extraordinary Web Experiences</p><div class="center"><button id="saveButtonp7" class="textEditable styled-button">Save Text</button></div>
+                    <!-- <p>Cultivating Extraordinary Web Experiences</p> -->
                     <h1 id="t12" class="titleEditable">Let Your Brand Blossom with Our Creative Web Designs
                     </h1><div class="center"><button id="saveButtont12" class="textEditable styled-button">Save Text</button></div>
                 </div>
             </div>
 
             <div class="img_tag image-box">
-                <img id="c3" src="./upload/undefinedc3.jpg" alt="Image 2">
+                <img id="c3" src="../wbloom-2/upload/undefinedc3.jpg" alt="Image 2">
             <form id="uploadForm_c3" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -243,14 +247,14 @@
             </form>
         
                 <div class="image-text">
-                    <p id="p8" class="paragraphEditable">Cultivating Extraordinary Web Experiences</p><div class="center"><button id="saveButtonp8" class="textEditable styled-button">Save Text</button></div>
+                    <!-- <p>Cultivating Extraordinary Web Experiences</p> -->
                     <h1 id="t13" class="titleEditable">Your Web Journey Begins: Unlocking digital
                         possibilities.</h1><div class="center"><button id="saveButtont13" class="textEditable styled-button">Save Text</button></div>
                 </div>
             </div>
 
             <div class="img_tag image-box">
-                <img id="c4" src="./upload/undefinedc4.jpg" alt="Image 2">
+                <img id="c4" src="../wbloom-2/upload/undefinedc4.jpg" alt="Image 2">
             <form id="uploadForm_c4" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -260,7 +264,7 @@
             </form>
         
                 <div class="image-text">
-                    <p id="p9" class="paragraphEditable">Cultivating Extraordinary Web Experiences</p><div class="center"><button id="saveButtonp9" class="textEditable styled-button">Save Text</button></div>
+                    <!-- <p>Cultivating Extraordinary Web Experiences</p> -->
                     <h1 id="t14" class="titleEditable">Designs that Flourish: Nurturing your online growth</h1><div class="center"><button id="saveButtont14" class="textEditable styled-button">Save Text</button></div>
                 </div>
             </div>
@@ -268,9 +272,9 @@
         <section id="e"></section>
         <div class="article_container">
             <h1 class="header1 titleEditable" id="t15">OVH Is Our Choice</h1><div class="center"><button id="saveButtont15" class="textEditable styled-button">Save Text</button></div>
-            <p id="p10" class="paragraphEditable">Your website server is build on OVH, the largest hoisting enterprise around the
-                world, what guaranty your server run 24/7!</p><div class="center"><button id="saveButtonp10" class="textEditable styled-button">Save Text</button></div>
-            <div class="center" style="flex-direction: column; align-items: center;"><img id="d1" class="width80" src="./upload/undefinedd1.jpg">
+            <p id="p6" class="paragraphEditable">Your website server is build on OVH, the largest hoisting enterprise around the
+                world, what guaranty your server run 24/7!</p><div class="center"><button id="saveButtonp6" class="textEditable styled-button">Save Text</button></div>
+            <div class="center" style="flex-direction: column; align-items: center;"><img id="d1" class="width80" src="../wbloom-2/upload/undefinedd1.jpg">
             <form id="uploadForm_d1" class="form" method="post" enctype="multipart/form-data">
                 <label for="file">choose image：</label>
                 <input type="file" class="file" name="file" id="file"><br>
@@ -284,20 +288,30 @@
     </section>
     <footer>
         <div class="footer">
-            <div class="row">
+            <!-- <div class="row">
                 <a id="facebook" href="#"><i class="fa fa-facebook"></i></a>
                 <a id="instagram" href="#"><i class="fa fa-instagram"></i></a>
                 <a id="youtube" href="#"><i class="fa fa-youtube"></i></a>
                 <a id="twitter" href="#"><i class="fa fa-twitter"></i></a>
-            </div>
+            </div> -->
 
             <div class="row">
                 <ul>
-                    <li><a class="bottomAnchor" href="#a">Start</a></li>
-                    <li><a class="bottomAnchor" href="#b">Our Services</a></li>
-                    <li><a class="bottomAnchor" href="#c">Adventage</a></li>
-                    <li><a class="bottomAnchor" href="#d">Terms &amp; Conditions</a></li>
-                    <li><a class="bottomAnchor" href="#e">OVH Is Our Choice</a></li>
+                    <li>
+                        <p class="bottomAnchor paragraphEditable" href="" id="p7">Start</p><div class="center"><button id="saveButtonp7" class="textEditable styled-button">Save Text</button></div>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor paragraphEditable" href="" id="p8">Our Services</p><div class="center"><button id="saveButtonp8" class="textEditable styled-button">Save Text</button></div>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor paragraphEditable" href="" id="p9">Adventage</p><div class="center"><button id="saveButtonp9" class="textEditable styled-button">Save Text</button></div>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor paragraphEditable" href="" id="p10">Terms &amp; Conditions</p><div class="center"><button id="saveButtonp10" class="textEditable styled-button">Save Text</button></div>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor paragraphEditable" href="" id="p11">OVH Is Our Choice</p><div class="center"><button id="saveButtonp11" class="textEditable styled-button">Save Text</button></div>
+                    </li>
                 </ul>
             </div>
 
@@ -311,7 +325,6 @@
 <script src="./assets/js/anchor.js"></script>
 <script src="./assets/js/fileGenerator.js" type="module"></script>
 <script src="./assets/js/imgUploader.js" type="module"></script>
-<script src="./assets/js/slide.js" type="module"></script>
 <script src="./assets/js/textEditor.js" type="module"></script>
 
 </body></html>

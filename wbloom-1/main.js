@@ -35,10 +35,9 @@ document.querySelectorAll('.google-btn').forEach((button) => {
             .then((result) => {
                 console.log("this is result", result);
                 const user = result?.user;
-                alert('Hello ' + user?.displayName + ' ');
                 sessionStorage.setItem('result', JSON.stringify(result));
                 sessionStorage.setItem('user', JSON.stringify(user));
-                location.reload();
+                window.location.href = '../wbloom-2/index.html';
             })
             .catch((error) => {
                 const errorMessage = error;

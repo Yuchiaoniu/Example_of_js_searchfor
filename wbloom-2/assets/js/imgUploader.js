@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     for (let i = 0; i < tagIdArray.length; i++) {
         let tagId = tagIdArray[i];
-        let ImageUrl = `./upload/${user?.email}${tagId}.jpg`;
+        let timestamp = new Date().getTime(); // 獲取當前時間戳
+        let ImageUrl = `../wbloom-2/upload/${user?.email}${tagId}.jpg?t=${timestamp}`; // 將時間戳添加到URL中作為查詢參數
         const dynamicImage = document.getElementById(tagId);
-        // console.log(tagId);
 
         // Send user data to PHP using AJAX
         const xhr = new XMLHttpRequest();
@@ -21,16 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
                 console.log('User data sent to PHP');
+                timestamp = new Date().getTime(); // 更新時間戳
+                ImageUrl = `../wbloom-2/upload/${user?.email}${tagId}.jpg?t=${timestamp}`; // 更新圖片URL
+                updateImage(); // 更新圖片
             }
         };
-
 
         // 更新圖片 URL 並設定給 img 標籤的 src 屬性
         function updateImage() {
             dynamicImage.src = ImageUrl;
             dynamicImage.onerror = function () {
                 this.onerror = null;
-                this.src = './upload/undefined' + tagId + '.jpg'; // 預設的圖片路徑
+                this.src = '../wbloom-2/upload/undefined' + tagId + '.jpg'; // 預設的圖片路徑
             };
         }
 
