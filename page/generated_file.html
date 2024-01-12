@@ -1,0 +1,317 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom | Home</title>
+    <link rel="stylesheet" class="style_file" href="style.css">
+    <link rel="stylesheet" href="questions.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;800&amp;family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <script src="https://apis.google.com/js/platform.js" async="" defer="" gapi_processed="true"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Play&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script><style id="dark-reader-style" type="text/css">@media screen {
+
+}</style>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.min.css">
+
+    <script src="imageCropper.js"></script>
+    <link rel="stylesheet" href="./imageCropper.css">
+</head>
+
+
+<body>
+
+    <header id="main-header">
+        <h1 id="t0" class="logo titleEditable">Bloom</h1><div class="center"><button id="saveButtont0" class="textEditable styled-button">Save Text</button></div>
+        <div style="display:flex; align-items: center; justify-content: center; flex-direction: row;">
+            <div style="color:white;" id="displayName">Hello Niu Yuchiao</div>
+            <button type="button" class="google-btn btn3">Connect with <span>Google</span></button>
+            <button type="button" id="logout-button" style="display: inline-flex;">sign out</button>
+        </div>
+    </header>
+    <section id="a"></section>
+    <div class="container">
+
+        <div class="content">
+            <h1 id="t1" class="titleEditable">WBloom - Where Art be build</h1><div class="center"><button id="saveButtont1" class="textEditable styled-button">Save Text</button></div>
+            <p id="p0" class="paragraphEditable">With our Pre-made website template, you can quickly create web pages with images and texts in
+                just
+                15 minutes for your brand.
+            </p><div class="center"><button id="saveButtonp0" class="textEditable styled-button">Save Text</button></div><a href="#b"><button class="btn-primary">
+                    Start
+                </button></a>
+        </div>
+        <img id="main" src="./upload/undefinedmain.jpg" class="background">
+            <form id="uploadForm_main" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="main">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+    </div>
+
+    <button id="generateButton" class="start-button">Save Page</button>
+    <section id="b" class="main_container"><br>
+        <div class="article_container">
+            <h1 class="header1 titleEditable" id="t2">Our Services</h1><div class="center"><button id="saveButtont2" class="textEditable styled-button">Save Text</button></div>
+            <p id="p1" class="paragraphEditable">Choose well size of photo to match all of field. And write something to introduce your product!
+                That is it!</p><div class="center"><button id="saveButtonp1" class="textEditable styled-button">Save Text</button></div>
+        </div>
+        <div class="section_container">
+            <div id="first_container" class="section_card_container">
+                <figure class="snip1218">
+                    <div class="image">
+
+                        <img id="a1" src="./upload/undefineda1.jpg">
+            <form id="uploadForm_a1" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="a1">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+                    </div>
+                    <figcaption>
+                        <h1 id="t3" class="img_tag titleEditable">Bloom</h1><div class="center"><button id="saveButtont3" class="textEditable styled-button">Save Text</button></div>
+                    </figcaption>
+                </figure>
+
+                <figure class="snip1218">
+                    <div class="image"><img id="a2" src="./upload/undefineda2.jpg">
+            <form id="uploadForm_a2" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="a2">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+                    </div>
+                    <figcaption>
+                        <h1 id="t4" class="img_tag titleEditable">Our Best Cars</h1><div class="center"><button id="saveButtont4" class="textEditable styled-button">Save Text</button></div>
+                    </figcaption>
+                </figure>
+
+                <figure class="snip1218">
+                    <div class="image"><img id="a3" src="./upload/undefineda3.jpg">
+            <form id="uploadForm_a3" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="a3">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+                    </div>
+                    <figcaption>
+                        <h1 id="t5" class="img_tag titleEditable">Our Models</h1><div class="center"><button id="saveButtont5" class="textEditable styled-button">Save Text</button></div>
+                    </figcaption>
+                </figure>
+
+                <figure class="snip1218">
+                    <div class="image"><img id="a4" src="./upload/undefineda4.jpg">
+            <form id="uploadForm_a4" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="a4">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+                    </div>
+                    <figcaption>
+                        <h1 class="img_tag titleEditable" id="t6">Our Success</h1><div class="center"><button id="saveButtont6" class="textEditable styled-button">Save Text</button></div>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </div>
+        <div class="center"><a href="#c"><button class="btn1">Next Step</button></a></div><br>
+        <div id="c" class="article_container">
+            <h1 class="header1 titleEditable" id="t7">Lightweight design</h1><div class="center"><button id="saveButtont7" class="textEditable styled-button">Save Text</button></div>
+            <p id="p2" class="paragraphEditable">By choosing the appropriate image size and promotional materials, you can create a ready-made
+                dynamic web page.</p><div class="center"><button id="saveButtonp2" class="textEditable styled-button">Save Text</button></div>
+        </div><br><br>
+        <section id="c"></section>
+        <div id="second_container" class="sections_container">
+            <section class="section-1">
+                <div class="section-1-text">
+                    <p id="p3" class="paragraphEditable">Each element has an entry animation that we have prepared in advanc</p><div class="center"><button id="saveButtonp3" class="textEditable styled-button">Save Text</button></div><br>
+                    <h1 id="t8" class="titleEditable">Each element can be edit
+                    </h1><div class="center"><button id="saveButtont8" class="textEditable styled-button">Save Text</button></div>
+                    <div class="section_btn_container">
+                        <a href="#f"><button class="btn1">Next Step</button></a>
+                    </div>
+                </div>
+                <div class="img_tag section-1-image">
+                    <img id="b1" src="./upload/undefinedb1.jpg" alt="">
+            <form id="uploadForm_b1" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="b1">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+                </div>
+            </section><br><br>
+            <section id="f" class="section-2">
+                <div class="img_tag section-2-image">
+                    <img id="b2" src="./upload/undefinedb2.jpg" alt="">
+            <form id="uploadForm_b2" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="b2">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+                </div>
+                <div class="section-2-text">
+                    <p id="p4" class="paragraphEditable">Customized website or Domain or any question: searchfor@gmail.com</p><div class="center"><button id="saveButtonp4" class="textEditable styled-button">Save Text</button></div>
+                    <h1 id="t9" class="titleEditable">Adventage</h1><div class="center"><button id="saveButtont9" class="textEditable styled-button">Save Text</button></div>
+                    <div class="section_btn_container">
+                        <a href="#d"><button class="btn1">Next Step</button></a>
+                    </div>
+                </div>
+            </section><br><br>
+        </div>
+        <section id="d"></section>
+        <div class="article_container">
+            <h1 class="header1 titleEditable" id="t10">We use PayPal as the payment platform</h1><div class="center"><button id="saveButtont10" class="textEditable styled-button">Save Text</button></div>
+            <p id="p5" class="paragraphEditable"> PayPal can effectively prevent fraud and protect the security of your personal
+                information such as credit card info, client info, etc.</p><div class="center"><button id="saveButtonp5" class="textEditable styled-button">Save Text</button></div>
+        </div>
+
+
+        <!-- New -->
+        <div id="third_container" class="image-container">
+            <div class="img_tag image-box">
+                <img id="c1" src="./upload/undefinedc1.jpg" alt="Image 1">
+            <form id="uploadForm_c1" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="c1">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+                <div class="image-text">
+                    <p id="p6" class="paragraphEditable">Where Web Designs Blossom into Digital Artistry</p><div class="center"><button id="saveButtonp6" class="textEditable styled-button">Save Text</button></div>
+                    <h1 id="t11" class="titleEditable">Cultivating Exquisite Web Experiences for Your Success
+                    </h1><div class="center"><button id="saveButtont11" class="textEditable styled-button">Save Text</button></div>
+                </div>
+            </div>
+            <div class="img_tag image-box">
+                <img id="c2" src="./upload/undefinedc2.jpg" alt="Image 2">
+            <form id="uploadForm_c2" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="c2">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+                <div class="image-text">
+                    <p id="p7" class="paragraphEditable">Cultivating Extraordinary Web Experiences</p><div class="center"><button id="saveButtonp7" class="textEditable styled-button">Save Text</button></div>
+                    <h1 id="t12" class="titleEditable">Let Your Brand Blossom with Our Creative Web Designs
+                    </h1><div class="center"><button id="saveButtont12" class="textEditable styled-button">Save Text</button></div>
+                </div>
+            </div>
+
+            <div class="img_tag image-box">
+                <img id="c3" src="./upload/undefinedc3.jpg" alt="Image 2">
+            <form id="uploadForm_c3" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="c3">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+                <div class="image-text">
+                    <p id="p8" class="paragraphEditable">Cultivating Extraordinary Web Experiences</p><div class="center"><button id="saveButtonp8" class="textEditable styled-button">Save Text</button></div>
+                    <h1 id="t13" class="titleEditable">Your Web Journey Begins: Unlocking digital
+                        possibilities.</h1><div class="center"><button id="saveButtont13" class="textEditable styled-button">Save Text</button></div>
+                </div>
+            </div>
+
+            <div class="img_tag image-box">
+                <img id="c4" src="./upload/undefinedc4.jpg" alt="Image 2">
+            <form id="uploadForm_c4" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="c4">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        
+                <div class="image-text">
+                    <p id="p9" class="paragraphEditable">Cultivating Extraordinary Web Experiences</p><div class="center"><button id="saveButtonp9" class="textEditable styled-button">Save Text</button></div>
+                    <h1 id="t14" class="titleEditable">Designs that Flourish: Nurturing your online growth</h1><div class="center"><button id="saveButtont14" class="textEditable styled-button">Save Text</button></div>
+                </div>
+            </div>
+        </div>
+        <section id="e"></section>
+        <div class="article_container">
+            <h1 class="header1 titleEditable" id="t15">OVH Is Our Choice</h1><div class="center"><button id="saveButtont15" class="textEditable styled-button">Save Text</button></div>
+            <p id="p10" class="paragraphEditable">Your website server is build on OVH, the largest hoisting enterprise around the
+                world, what guaranty your server run 24/7!</p><div class="center"><button id="saveButtonp10" class="textEditable styled-button">Save Text</button></div>
+            <div class="center" style="flex-direction: column; align-items: center;"><img id="d1" class="width80" src="./upload/undefinedd1.jpg">
+            <form id="uploadForm_d1" class="form" method="post" enctype="multipart/form-data">
+                <label for="file">choose image：</label>
+                <input type="file" class="file" name="file" id="file"><br>
+                <input type="hidden" name="user_data" class="user_data_field" value="yuchiao.niu@gmail.com">
+                <input type="hidden" name="tag_name" value="d1">
+                <input class="submitButton" type="submit" value="upload">
+            </form>
+        </div>
+            <div class="mainDiv"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a id="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a id="instagram" href="#"><i class="fa fa-instagram"></i></a>
+                <a id="youtube" href="#"><i class="fa fa-youtube"></i></a>
+                <a id="twitter" href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a class="bottomAnchor" href="#a">Start</a></li>
+                    <li><a class="bottomAnchor" href="#b">Our Services</a></li>
+                    <li><a class="bottomAnchor" href="#c">Adventage</a></li>
+                    <li><a class="bottomAnchor" href="#d">Terms &amp; Conditions</a></li>
+                    <li><a class="bottomAnchor" href="#e">OVH Is Our Choice</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                All rights reserved © 2023
+            </div>
+        </div>
+    </footer>
+
+<script src="./assets/js/firebase.js" type="module"></script>
+<script src="./assets/js/anchor.js"></script>
+<script src="./assets/js/fileGenerator.js" type="module"></script>
+<script src="./assets/js/imgUploader.js" type="module"></script>
+<script src="./assets/js/slide.js" type="module"></script>
+<script src="./assets/js/textEditor.js" type="module"></script>
+
+</body></html>

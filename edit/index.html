@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom | Home</title>
+    <meta name="description"
+        content="WBloom - Set up your own website in just 15 minutes for only 10 dollars, tax included.">
+    <link rel="stylesheet" class="style_file" href="style.css">
+    <link rel="stylesheet" href="questions.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;800&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script async defer src="https://apis.google.com/js/platform.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <script async src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+    <script async src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js"></script>
+    <script async src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.1.0/cropper.min.css">
+    <script src="imageCropper.js"></script>
+    <link rel="stylesheet" href="./imageCropper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div style="display:flex; align-items: center; justify-content: center; flex-direction: row;">
+            <h1 id="brandName" class="logo">Bloom</h1>
+        </div>
+        <div id="userzone" style="display:flex; align-items: center; justify-content: center; flex-direction: row;">
+            <div style="color:white;" id="displayName"></div>
+            <button type="button" class="google-btn btn3">Connect with <span>Google</span></button>
+            <button type="button" id="logout-button">sign out</button>
+        </div>
+        <!-- 加入一個隱藏的標籤來儲存email -->
+        <div id="email" style="display: none;"></div>
+    </header>
+
+    <section id="a"></section>
+    <div class="container">
+
+        <div class="content">
+            <h1>Where The Art be build</h1>
+            <p>With our Pre-made website template, you can quickly create web pages with images and texts in
+                just
+                15 minutes for your brand.
+            </p><a href="#b"><button class="btn-primary">
+                    Start
+                </button></a>
+        </div>
+        <img id="main" src="./assets/img/sunset.jpg" class="background">
+    </div>
+
+    <button id="generateButton" class="start-button">Save Page</button>
+    <section id="b" class="main_container"><br>
+        <div class="article_container">
+            <h1 class="header1">Our Services</h1>
+            <p>Choose well size of photo to match all of field. And write something to introduce your product!
+                That is it!</p>
+        </div>
+        <div class="section_container">
+            <div id="first_container" class="section_card_container">
+                <figure class="snip1218">
+                    <div class="image">
+
+                        <img id="a1" src="./assets/img/undefineda1.jpg" />
+                    </div>
+                    <figcaption>
+                        <h1 id="t12" class="img_tag">Bloom</h3>
+                    </figcaption>
+                </figure>
+
+                <figure class="snip1218">
+                    <div class="image"><img id="a2" src="./assets/img/a2.jpg" />
+                    </div>
+                    <figcaption>
+                        <h1 id="t13" class="img_tag">Our Best Cars</h3>
+                    </figcaption>
+                </figure>
+
+                <figure class="snip1218">
+                    <div class="image"><img id="a3" src="./assets/img/a3.jpg" />
+                    </div>
+                    <figcaption>
+                        <h1 id="t14" class="img_tag">Our Models</h3>
+                    </figcaption>
+                </figure>
+
+                <figure class="snip1218">
+                    <div class="image"><img id="a4" src="./assets/img/a4.jpg" />
+                    </div>
+                    <figcaption>
+                        <h1 class="img_tag">Our Success</h3>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </div>
+        <div class="center"><a href="#c"><button class="btn1">Next Step</button></a></div><br>
+        <div id="c" class="article_container">
+            <h1 class="header1">Lightweight design</h1>
+            <p>By choosing the appropriate image size and promotional materials, you can create a ready-made
+                dynamic web page.</p>
+        </div><br><br>
+        <section id="c"></section>
+        <div id="second_container" class="sections_container">
+            <section class="section-1">
+                <div class="section-1-text">
+                    <p>Each element has an entry animation that we have prepared in advance.
+                    </p><br>
+                    <h1>Each element can be edit
+                    </h1>
+                    <div class="section_btn_container">
+                        <a href="#f"><button class="btn1">Next Step</button></a>
+                    </div>
+                </div>
+                <div class="img_tag section-1-image">
+                    <img id="b1" src="./assets/img/b1.jpg" alt="">
+                </div>
+            </section><br><br>
+            <section id="f" class="section-2">
+                <div class="img_tag section-2-image">
+                    <img id="b2" src="./assets/img/b2.jpg" alt="">
+                </div>
+                <div class="section-2-text">
+                    <p>Customized website or Domain or any question: searchfor@gmail.com</p>
+                    <h1>Adventage</h1>
+                    <div class="section_btn_container">
+                        <a href="#d"><button class="btn1">Next Step</button></a>
+                    </div>
+                </div>
+            </section><br><br>
+        </div>
+        <section id="d"></section>
+        <div class="article_container">
+            <h1 class="header1">We use PayPal as the payment platform</h1>
+            <p> PayPal can effectively prevent fraud and protect the security of your personal
+                information such as credit card info, client info, etc.</p>
+        </div>
+
+
+        <!-- New -->
+        <div id="third_container" class="image-container">
+            <div class="img_tag image-box">
+                <img id="c1" src="./assets/img/c1.jpg" alt="Image 1">
+                <div class="image-text">
+                    <!-- <p>Where Web Designs Blossom into Digital Artistry</p> -->
+                    <h1>Cultivating Exquisite Web Experiences for Your Success
+                    </h1>
+                </div>
+            </div>
+            <div class="img_tag image-box">
+                <img id="c2" src="./assets/img/c2.jpg" alt="Image 2">
+                <div class="image-text">
+                    <!-- <p>Cultivating Extraordinary Web Experiences</p> -->
+                    <h1>Let Your Brand Blossom with Our Creative Web Designs
+                    </h1>
+                </div>
+            </div>
+
+            <div class="img_tag image-box">
+                <img id="c3" src="./assets/img/c3.jpg" alt="Image 2">
+                <div class="image-text">
+                    <!-- <p>Cultivating Extraordinary Web Experiences</p> -->
+                    <h1>Your Web Journey Begins: Unlocking digital
+                        possibilities.</h1>
+                </div>
+            </div>
+
+            <div class="img_tag image-box">
+                <img id="c4" src="./assets/img/c4.jpg" alt="Image 2">
+                <div class="image-text">
+                    <!-- <p>Cultivating Extraordinary Web Experiences</p> -->
+                    <h1>Designs that Flourish: Nurturing your online growth</h1>
+                </div>
+            </div>
+        </div>
+        <section id="e"></section>
+        <div class="article_container">
+            <h1 class="header1">OVH Is Our Choice</h1>
+            <p>Your website server is build on OVH, the largest hoisting enterprise around the
+                world, what guaranty your server run 24/7!</p>
+            <div class="center" style="flex-direction: column; align-items: center;"><img id="d1" class="width80"
+                    src="./assets/img/mapex.png"></div>
+            <div class="mainDiv"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <!-- <div class="row">
+                <a id="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a id="instagram" href="#"><i class="fa fa-instagram"></i></a>
+                <a id="youtube" href="#"><i class="fa fa-youtube"></i></a>
+                <a id="twitter" href="#"><i class="fa fa-twitter"></i></a>
+            </div> -->
+
+            <div class="row">
+                <ul>
+                    <li>
+                        <p class="bottomAnchor" href="">Start</p>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor" href="">Our Services</p>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor" href="">Adventage</p>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor" href="">Terms & Conditions</p>
+                    </li>
+                    <li>
+                        <p class="bottomAnchor" href="">OVH Is Our Choice</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                All rights reserved &copy; 2023
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./assets/js/firebase.js" type="module"></script>
+<script src="./assets/js/anchor.js"></script>
+<script src="./assets/js/fileGenerator.js" type="module"></script>
+<script src="./assets/js/imgUploader.js" type="module"></script>
+<script src="./assets/js/textEditor.js" type="module"></script>
+
+</html>
