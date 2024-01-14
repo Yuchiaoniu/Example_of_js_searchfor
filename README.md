@@ -9,10 +9,10 @@ file:
       upload:edit/assets/js/filegenerator.js/generateButton
       upload:edit/documentUpload.php/$filePath
 img:
-      upload:edit/assets/js/imageUploader.js/ImageUrl
-      upload:edit/imageCropper.js/imageSelect
-      upload:edit/imageUpload.php/$image_url
-      fetch:edit/assets/js/imageUploader.js/ImageUrl
+      upload:edit/assets/js/imageUploader.js/ImageUrl(不可修改，因為會影響到page頁面渲染)
+      upload:edit/imageCropper.js/imageSelect(不可修改，因為會影響到page頁面渲染)
+      upload:edit/imageUpload.php/$image_url(不可修改，因為會影響到page頁面渲染)
+      fetch:edit/assets/js/imageUploader.js/ImageUrl(不可修改，因為會影響到page頁面渲染)
 text:
       describe:
                 upload:home/filegenerator.php/$describeFilePath
