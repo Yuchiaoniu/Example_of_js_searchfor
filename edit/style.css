@@ -355,10 +355,14 @@ figure.snip1218 i {
 .header1{
   margin: auto;
   text-align: center;
-  margin: 30px;
+  width:90%;
+  margin: 30px 0px;
   font-size: 40px;
 }
-
+.article_container{display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;}
 .article_container p{
   line-height: 2em;
   color: #333;
@@ -377,6 +381,12 @@ figure.snip1218 i {
 
 .section-1-text{
     margin-top: 150px;
+}
+.section-1-text p{
+  line-height: 2em;
+  text-align:start;
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 
 .section-1-text h1{
@@ -436,6 +446,7 @@ figure.snip1218 i {
 }
 .section-1-image{
     margin-top: 30px;
+    margin-left: 100px;
 }
 
 .section-2{
@@ -451,6 +462,8 @@ figure.snip1218 i {
 }
 
 .section-2-text p{
+  line-height: 2em;
+  text-align:start;
     font-size: 25px;
     margin-bottom: 15px;
 }
@@ -566,7 +579,7 @@ border-bottom-right-radius: 8px;
 }
 
 .image-text *{
-margin-bottom: 5px;
+margin-bottom: 20px;
 }
 
 .image-text p{
@@ -621,12 +634,29 @@ width: 100%;
 }
 .bottomAnchor{font-size:larger !important;}
 @media screen and (max-width: 1000px) {
+  .section-1-text p{
+    text-align:center;
+  }
+
+  .section-2-text p{
+    text-align:center;
+  }
+
   figure.snip1218{width:100% !important;}
   .styled-button{width:30vw !important;}
-  p{font-size: medium !important;}
-
+  p{font-size: large !important;}
+  .header1{font-size: 25px;}
+.form-input{width:80%;}
   .section-1-text {
     margin-top: 40px;
+}
+.section-1-image{
+  margin-top: 30px;
+  margin-left: 0px !important;
+}
+.section-2-image{
+  margin-top: 30px;
+  margin-right: 0px !important;
 }
 .section-2-text {
   margin-top: 30px;
@@ -706,10 +736,10 @@ display: block;
   }
 
   .section-1{
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 .section-2{
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
   .section_card_container{

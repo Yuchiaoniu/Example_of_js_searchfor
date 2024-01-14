@@ -4,7 +4,7 @@ if (user !== null) {
     console.log(email);
     var loginElement = document.getElementById('login');
     loginElement.innerHTML += `
-    <em style="margin:5px 5px;">br.searchfor.ovh/page/<strong style="color:blue;">seu título</strong>.html será o URL do seu produto</em>
+    <em style="width:80%;">br.searchfor.ovh/page/<strong style="color:blue;">seu título</strong>.html será o URL do seu produto</em><br>
     <input type="text" id="title1" placeholder="título" class="form-input"><br>
     <input type="text" id="title2" placeholder="Confirmar título" class="form-input"><br>
     <input type="text" id="describe" placeholder="Descrição(opção)" class="form-input"><br>
