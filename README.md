@@ -2,7 +2,7 @@ title&describe
 image&text upload
 filegenerator
 checkout
-paycheck
+paycheck:確保有付款，否則到產品頁會跳轉到付款頁，如果已經付款，從編輯頁儲存後直接進入產品頁
 file:
       upload:home/assets/js/filegenerator.js/submitButton
       upload:home/filegenerator.php/$filePath
