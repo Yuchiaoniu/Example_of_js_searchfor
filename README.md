@@ -1,3 +1,8 @@
+title&describe
+image&text upload
+filegenerator
+checkout
+paycheck
 file:
       upload:home/assets/js/filegenerator.js/submitButton
       upload:home/filegenerator.php/$filePath
