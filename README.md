@@ -1,0 +1,27 @@
+file:
+      upload:home/assets/js/filegenerator.js/submitButton
+      upload:home/filegenerator.php/$filePath
+      upload:edit/assets/js/filegenerator.js/generateButton
+      upload:edit/documentUpload.php/$filePath
+img:
+      upload:edit/assets/js/imageUploader.js/ImageUrl
+      upload:edit/imageCropper.js/imageSelect
+      upload:edit/imageUpload.php/$image_url
+      fetch:edit/assets/js/imageUploader.js/ImageUrl
+text:
+      describe:
+                upload:home/filegenerator.php/$describeFilePath
+                fetch:edit/assets/js/textEditor.js/describeFilePath
+      title:
+                upload:edit/textUpload.php/$filePath
+                fetch:edit/assets/js/textEditor.js/fetchTitlesTextFile.filePath
+      paragraphedit
+                upload:edit/textUpload.php/$filePath
+                fetch:edit/assets/js/textEditor.js/fetchParagraphsTextFile.filePath
+paycheck:
+      fileGenerator.js
+      paycheck.php
+
+paypal:
+      index.js
+      checkout.ejs
