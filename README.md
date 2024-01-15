@@ -4,7 +4,7 @@ filegenerator<br>
 checkout<br>
 paycheck:確保有付款，否則到產品頁會跳轉到付款頁，如果已經付款，從編輯頁儲存後直接進入產品頁<br>
 file:<br>
-      upload:home/assets/js/filegenerator.js/submitButton<br>
+      <p>upload:home/assets/js/filegenerator.js/submitButton</p><br>
       upload:home/filegenerator.php/$filePath<br>
       upload:edit/assets/js/filegenerator.js/generateButton<br>
       upload:edit/documentUpload.php/$filePath<br>
