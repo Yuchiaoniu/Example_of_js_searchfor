@@ -1,4 +1,4 @@
-title&describe
+title&describe<br>
 image&text upload
 filegenerator
 checkout
