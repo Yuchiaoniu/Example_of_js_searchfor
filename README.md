@@ -1,32 +1,32 @@
 title&describe<br>
-image&text upload
-filegenerator
-checkout
-paycheck:確保有付款，否則到產品頁會跳轉到付款頁，如果已經付款，從編輯頁儲存後直接進入產品頁
-file:
-      upload:home/assets/js/filegenerator.js/submitButton
-      upload:home/filegenerator.php/$filePath
-      upload:edit/assets/js/filegenerator.js/generateButton
-      upload:edit/documentUpload.php/$filePath
-img:
-      upload:edit/assets/js/imageUploader.js/ImageUrl(不可修改，因為會影響到page頁面渲染)
-      upload:edit/imageCropper.js/imageSelect(不可修改，因為會影響到page頁面渲染)
-      upload:edit/imageUpload.php/$image_url(不可修改，因為會影響到page頁面渲染)
-      fetch:edit/assets/js/imageUploader.js/ImageUrl(不可修改，因為會影響到page頁面渲染)
-text:
-      describe:
-                upload:home/filegenerator.php/$describeFilePath
-                fetch:edit/assets/js/textEditor.js/describeFilePath
-      title:
-                upload:edit/textUpload.php/$filePath
-                fetch:edit/assets/js/textEditor.js/fetchTitlesTextFile.filePath
-      paragraphedit
-                upload:edit/textUpload.php/$filePath
-                fetch:edit/assets/js/textEditor.js/fetchParagraphsTextFile.filePath
-paycheck:
-      fileGenerator.js
-      paycheck.php
+image&text upload<br>
+filegenerator<br>
+checkout<br>
+paycheck:確保有付款，否則到產品頁會跳轉到付款頁，如果已經付款，從編輯頁儲存後直接進入產品頁<br>
+file:<br>
+      upload:home/assets/js/filegenerator.js/submitButton<br>
+      upload:home/filegenerator.php/$filePath<br>
+      upload:edit/assets/js/filegenerator.js/generateButton<br>
+      upload:edit/documentUpload.php/$filePath<br>
+img:<br>
+      upload:edit/assets/js/imageUploader.js/ImageUrl(不可修改，因為會影響到page頁面渲染)<br>
+      upload:edit/imageCropper.js/imageSelect(不可修改，因為會影響到page頁面渲染)<br>
+      upload:edit/imageUpload.php/$image_url(不可修改，因為會影響到page頁面渲染)<br>
+      fetch:edit/assets/js/imageUploader.js/ImageUrl(不可修改，因為會影響到page頁面渲染)<br>
+text:<br>
+      describe:<br>
+                upload:home/filegenerator.php/$describeFilePath<br>
+                fetch:edit/assets/js/textEditor.js/describeFilePath<br>
+      title:<br>
+                upload:edit/textUpload.php/$filePath<br>
+                fetch:edit/assets/js/textEditor.js/fetchTitlesTextFile.filePath<br>
+      paragraphedit<br>
+                upload:edit/textUpload.php/$filePath<br>
+                fetch:edit/assets/js/textEditor.js/fetchParagraphsTextFile.filePath<br>
+paycheck:<br>
+      fileGenerator.js<br>
+      paycheck.php<br>
 
-paypal:
-      index.js
-      checkout.ejs
+paypal:<br>
+      index.js<br>
+      checkout.ejs<br>
