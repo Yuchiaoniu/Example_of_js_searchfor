@@ -1,32 +1,15 @@
-title&describe<br>
-image&text upload<br>
-filegenerator<br>
-checkout<br>
-paycheck:確保有付款，否則到產品頁會跳轉到付款頁，如果已經付款，從編輯頁儲存後直接進入產品頁<br>
-file:<br>
-      upload:home/assets/js/filegenerator.js/submitButton<br>
-      upload:home/filegenerator.php/$filePath<br>
-      upload:edit/assets/js/filegenerator.js/generateButton<br>
-      upload:edit/documentUpload.php/$filePath<br>
-img:<br>
-      upload:edit/assets/js/imageUploader.js/ImageUrl(不可修改，因為會影響到page頁面渲染)<br>
-      upload:edit/imageCropper.js/imageSelect(不可修改，因為會影響到page頁面渲染)<br>
-      upload:edit/imageUpload.php/$image_url(不可修改，因為會影響到page頁面渲染)<br>
-      fetch:edit/assets/js/imageUploader.js/ImageUrl(不可修改，因為會影響到page頁面渲染)<br>
-text:<br>
-      describe:<br>
-                upload:home/filegenerator.php/$describeFilePath<br>
-                fetch:edit/assets/js/textEditor.js/describeFilePath<br>
-      title:<br>
-                upload:edit/textUpload.php/$filePath<br>
-                fetch:edit/assets/js/textEditor.js/fetchTitlesTextFile.filePath<br>
-      paragraphedit<br>
-                upload:edit/textUpload.php/$filePath<br>
-                fetch:edit/assets/js/textEditor.js/fetchParagraphsTextFile.filePath<br>
-paycheck:<br>
-      fileGenerator.js<br>
-      paycheck.php<br>
+searchfor功能介紹
 
-paypal:<br>
-      index.js<br>
-      checkout.ejs<br>
+在home/index.html中登入google會員後，輸入客製化title
+在edit/<a>yourtitle</a>.html中修改文字和圖片，儲存頁面後跳轉到paypal付款頁面
+在page/<a>yourtitle</a>.html顯示遞交產品
+
+使用API
+firebase:aute
+paypal:subscribion API、product API、IPN API
+
+使用技術
+html, css, js, php
+上傳文字:AJAX、php
+上傳圖片:imgcropper、php
+結帳:node.js
