@@ -1,5 +1,6 @@
 # _searchfor功能介紹_
 部署網址:<a>https://br.searchfor.ovh/home/index.html</a><br>
+中文測試部署網址:<a>https://br.searchfor.ovh/searchfor_test_1/home/index.html</a><br>
 在home/index.html中登入google會員後，輸入客製化title<br>
 在edit/<a>yourtitle</a>.html中修改文字和圖片，儲存頁面後跳轉到paypal付款頁面<br>
 在page/<a>yourtitle</a>.html顯示遞交產品<br>
