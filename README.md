@@ -1,4 +1,4 @@
-searchfor功能介紹
+# _searchfor功能介紹_
 
 在home/index.html中登入google會員後，輸入客製化title
 在edit/<a>yourtitle</a>.html中修改文字和圖片，儲存頁面後跳轉到paypal付款頁面
