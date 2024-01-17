@@ -5,11 +5,11 @@
 在page/<a>yourtitle</a>.html顯示遞交產品<br>
 
 ## 使用API<br>
-firebase:auth
+firebase:auth<br>
 paypal:subscribion API、product API、IPN API
 
 ## 使用技術<br>
-html, css, js, php
-上傳文字:AJAX、php
-上傳圖片:imgcropper、php
+html, css, js, php<br>
+上傳文字:AJAX、php<br>
+上傳圖片:imgcropper、php<br>
 結帳:node.js
