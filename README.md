@@ -5,7 +5,7 @@
 在page/<a>yourtitle</a>.html顯示遞交產品<br>
 
 ## 使用API<br>
-firebase:aute
+firebase:auth
 paypal:subscribion API、product API、IPN API
 
 ## 使用技術<br>
